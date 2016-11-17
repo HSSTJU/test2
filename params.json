@@ -1,0 +1,6 @@
+{
+  "name": "Test2",
+  "tagline": "",
+  "body": "<!doctype html>\r\n<html>\r\n<head>\r\n<!--meta charset=\"utf-8\"-->\r\n<title>无标题文档</title>\r\n</head>\r\n\r\n\r\n<body>\r\n<p>Regex test</p>\r\nInput String:<input id=\"inputstring\" type=\"text\"><br>\r\nInput RegExp:<input id=\"reg_expression\" type=\"text\" value=\"[A-Za-z0-9\\u4e00-\\u9fa5](6-Hanzi_count)|(16-Hanzi_count)\"><br>\r\n<button onclick = \"myFunction()\">Check</button><br>\r\nResult:<p id=\"demo\"></p>\r\n<script>\r\nfunction myFunction(){\r\n\tvar str = document.getElementById(\"inputstring\").value;\r\n\tdocument.getElementById(\"demo\").innerHTML=check_leng(str);\r\n}\r\nfunction check_leng(str){\r\n\tif(/^[a-zA-Z0-9]{6,16}$/.test(\"12345678901234567\")){\r\n\talert(\"hss\");\r\n\t\treturn true;\r\n\t}\r\n\talert(\"Please input right string\");\r\n\treturn false;\r\n}\r\n\r\n</script>\r\n</body>\r\n<html>",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
